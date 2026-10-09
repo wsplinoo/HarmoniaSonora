@@ -71,3 +71,110 @@ hr {
     object-fit: cover;
     display: block;
 }
+@media (min-width: 992px) and (max-width:1200px){
+    body{
+        background-image: url('/assets/back-pc.jpg');
+    }
+    h1{
+    color: #E1FEFF;
+    -webkit-text-stroke: 1.5px #090406;
+    }
+    .tv{
+        display: none;
+    }
+    .pc{
+        display: block;
+        padding-left: 44%;
+    }
+}
+
+@media (min-width: 768px) and (max-width:992px){
+    body{
+        background-image: url('/assets/back-tablet.jpg');
+    }
+    h1{
+    color: #00BBED;
+    -webkit-text-stroke: 1.5px #58555D;
+    }
+    .tv{
+        display: none;
+    }
+    .tablet{
+        display: block;
+        padding-left: 44%;
+    }
+}
+
+@media (min-width: 600px) and (max-width:768px){
+    body{
+        background-image: url('/assets/back-phone.jpg');
+    }
+    h1{
+    color: #45B1DF;
+    -webkit-text-stroke: 1.5px #6F7385;
+    }
+    .tv{
+        display: none;
+    }
+    .phone{
+        display: block;
+        padding-left: 44%;
+    }
+}
+@media screen and (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 16px;
+    }
+
+    .player {
+        flex-direction: column;
+        text-align: center;
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .capa {
+        width: 90px;
+        height: 90px;
+    }
+
+    .info h3 {
+        font-size: 18px;
+    }
+
+    .info p {
+        font-size: 14px;
+    }
+
+    .galeria {
+        flex-wrap: wrap;
+        padding: 14px;
+        gap: 12px;
+    }
+
+    .galeria a {
+        flex: 1 1 calc(50% - 12px);
+        display: flex;
+        justify-content: center;
+    }
+
+    .galeria img {
+        width: 100%;
+        max-width: 110px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .card {
+        width: 90%;
+        max-width: 480px;
+    }
+}
